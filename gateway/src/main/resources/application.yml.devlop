@@ -1,0 +1,29 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    discovery:
+      enabled: true
+    # gateway:
+    #  routes:
+    #    - id: r1
+    #      uri: http://localhost:8080
+    #      predicates:
+    #        - Path= /user/**
+    #    - id: r2
+    #      uri: http://localhost:8081
+    #      predicates:
+    #        - Path= /book/**
+    gateway:
+      routes:
+        - id: book
+          uri: lb://book-service
+          predicates:
+            - Path=/api/books/**
+        - id: user
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+
