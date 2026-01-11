@@ -60,10 +60,22 @@ graph TD
     BookSvc --- DB_Book
     EmpruntSvc --- DB_Emprunt
 
-    style Gateway fill:#f9f,stroke:#333,stroke-width:2px
-    style Eureka fill:#bbf,stroke:#333,stroke-width:1px
-    style Kafka fill:#dfd,stroke:#333,stroke-width:2px
-    style Client fill:#fff,stroke:#333,stroke-dasharray: 5 5
+    %% 🎨 Nouveau thème visuel (sobre / moderne)
+    style Client fill:#F8FAFC,stroke:#64748B,stroke-width:2px,stroke-dasharray: 6 4
+    style Gateway fill:#0EA5E9,color:#ffffff,stroke:#0369A1,stroke-width:2px
+    style Eureka fill:#6366F1,color:#ffffff,stroke:#4338CA,stroke-width:2px
+
+    style UserSvc fill:#22C55E,color:#ffffff,stroke:#15803D
+    style BookSvc fill:#22C55E,color:#ffffff,stroke:#15803D
+    style EmpruntSvc fill:#22C55E,color:#ffffff,stroke:#15803D
+    style NotifSvc fill:#16A34A,color:#ffffff,stroke:#166534
+
+    style Kafka fill:#F59E0B,color:#ffffff,stroke:#B45309,stroke-width:2px
+
+    style DB_User fill:#64748B,color:#ffffff,stroke:#334155
+    style DB_Book fill:#64748B,color:#ffffff,stroke:#334155
+    style DB_Emprunt fill:#64748B,color:#ffffff,stroke:#334155
+
 ```
 
 ### Services principaux
