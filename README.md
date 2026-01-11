@@ -1,5 +1,4 @@
-# Gestion des Emprunts de Livres ? Microservices Spring Boot
-
+# Gestion des Emprunts de Livres 
 Ce projet illustre une application de gestion des emprunts de livres en architecture microservices. Il met en pratique Spring Cloud (Gateway, Eureka, OpenFeign), la persistance MySQL par service, et la communication asynchrone via Kafka. L'ensemble est orchestre avec Docker Compose.
 
 ## Objectifs
